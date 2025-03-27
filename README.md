@@ -10,6 +10,11 @@
 - print("Multiplication",(a*b))
 - print("Division",(a/b))
 
+- ### Task1
+- a= input("Enter the first name:")
+- b= input("Enter the last name:")
+- print("Hello,",a,"",b,"! Welcome to the Python program.")
+
 ## Assignment 2
 - Assignment2task1.py and Assignment2tas2 are the two task of Assignment 2. 
 
