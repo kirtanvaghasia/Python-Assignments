@@ -1,62 +1,126 @@
-# Python-Assignments
+# Python Assignments
+
+This repository contains multiple Python assignments, each consisting of two tasks.
+
+---
 
 ## Assignment 1
-- Assignment1task1.py and Assignment1tas2 are the two task of Assignment 1.
-- ### Task1
-- a= int(input("Enter the first number:"))
-- b= int(input("Enter the second number:"))
-- print("Addition:",(a+b))
-- print("Substraction",(a-b))
-- print("Multiplication",(a*b))
-- print("Division",(a/b))
+This assignment includes two tasks:  
+- `Assignment1task1.py`
+- `Assignment1task2.py`
 
-- ### Task1
-- a= input("Enter the first name:")
-- b= input("Enter the last name:")
-- print("Hello,",a,"",b,"! Welcome to the Python program.")
+### **Task 1: Basic Arithmetic Operations**
+This script takes two numbers as input and performs basic arithmetic operations.  
+```python
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
+```
+
+### **Task 2: Greeting with First and Last Name**
+This script takes the first and last name as input and prints a welcome message.  
+```python
+a = input("Enter your first name: ")
+b = input("Enter your last name: ")
+
+print("Hello,", a, b, "! Welcome to the Python program.")
+```
+
+---
 
 ## Assignment 2
-- Assignment2task1.py and Assignment2tas2 are the two task of Assignment 2.
+This assignment includes two tasks:  
+- `Assignment2task1.py`
+- `Assignment2task2.py`
 
-- ### Task1
-- a= int(input("Enter a number:"))
+### **Task 1: Even or Odd Number Checker**
+This script checks whether a given number is even or odd.  
+```python
+a = int(input("Enter a number: "))
 
-- if a%2 == 0:
--     print(a," is Even nunber.")
-- else:
--     print(a," is odd number")
+if a % 2 == 0:
+    print(a, "is an Even number.")
+else:
+    print(a, "is an Odd number.")
+```
 
-- ### Task2
-- i=0
-- count=0
-- while(i<=50):
--     count += i
--    i += 1 
+### **Task 2: Sum of Numbers from 1 to 50**
+This script calculates the sum of numbers from 1 to 50 using a while loop.  
+```python
+i = 1
+count = 0
 
-- print("the sum of number from 1 to 50 is :",count)
+while i <= 50:
+    count += i
+    i += 1
+
+print("The sum of numbers from 1 to 50 is:", count)
+```
+
+---
 
 ## Assignment 3
-- Assignment3task1.py and Assignment3tas2 are the two task of Assignment 3.
+This assignment includes two tasks:  
+- `Assignment3task1.py`
+- `Assignment3task2.py`
 
-- ### Task 1
-- def factorial(number):
--     if number == 0 or number == 1:
--         return 1
--     return number * factorial(number-1)
+### **Task 1: Factorial Calculation**
+This script calculates the factorial of a given number using recursion.  
+```python
+def factorial(number):
+    if number == 0 or number == 1:
+        return 1
+    return number * factorial(number - 1)
 
+num = int(input("Enter a number: "))
+fact = factorial(num)
+print(f"Factorial of {num} is: {fact}")
+```
 
-- num = int(input("Enter the number:"))
-- fact = factorial(num)
-- print(f"factorial of {num} is: {fact}")
+### **Task 2: Mathematical Calculations**
+This script performs three mathematical operations:  
+- Square root
+- Natural logarithm (log base e)
+- Sine of the number (in radians)
 
+```python
+import math
 
-- ### Task 2
-- import math as mt
-- num = int(input("Enter the number:"))
+num = float(input("Enter a number: "))
 
-- sq = mt.sqrt(num)
-- log_value = mt.log(num) if num>0 else "Undefined"
-- sin_val = mt.sin(num)
-- print(f"Square root: {sq}")
-- print(f"Logarithm: {log_value}")
-- print(f"Sine: {sin_val}")
+sq = math.sqrt(num)
+log_value = math.log(num) if num > 0 else "Undefined (logarithm of non-positive numbers is not defined)"
+sin_val = math.sin(num)
+
+print(f"Square root: {sq}")
+print(f"Natural Logarithm: {log_value}")
+print(f"Sine: {sin_val}")
+```
+
+---
+
+## How to Run the Scripts
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/YOUR_USERNAME/Python-Assignments.git
+   ```
+2. Navigate to the repository:
+   ```sh
+   cd Python-Assignments
+   ```
+3. Run any script using Python:
+   ```sh
+   python Assignment1task1.py
+   python Assignment1task2.py
+   python Assignment2task1.py
+   python Assignment2task2.py
+   python Assignment3task1.py
+   python Assignment3task2.py
+   ```
+
+---
+
