@@ -123,7 +123,32 @@ try:
             print(line.strip())  # strip() removes leading/trailing whitespace, including newlines
 except FileNotFoundError:
     print("Error: The file 'sample.txt' does not exist.")
+```
+### **Task 2:Write and Append Data to a File
 
+```python
+# Assignment4task2.py
+# Step 1: Take user input and write it to the file
+user_input = input("Enter some data to write to the file: ")
+
+with open("output.txt", "w") as file:
+    file.write(user_input + "\n")
+
+# Step 2: Append additional data to the file
+additional_data = input("Enter additional data to append to the file: ")
+
+with open("output.txt", "a") as file:
+    file.write(additional_data + "\n")
+
+# Step 3: Read and display the final content of the file
+print("\nFinal content of 'output.txt':\n")
+
+with open("output.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+
+```
+```
 
 
 ## How to Run the Scripts
