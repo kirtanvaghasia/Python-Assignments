@@ -148,7 +148,7 @@ with open("output.txt", "r") as file:
         print(line.strip())
 
 ```
-```
+---
 
 
 ## How to Run the Scripts
