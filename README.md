@@ -103,6 +103,29 @@ print(f"Sine: {sin_val}")
 
 ---
 
+# Assignment 4  
+This assignment includes two tasks:  
+- `Assignment4task1.py`  
+- `Assignment4task2.py`
+
+---
+
+### **Task 1: Read a File and Handle Errors**  
+This script opens and reads a file named `sample.txt`. It prints the file's content line by line and handles the error gracefully if the file does not exist.
+
+```python
+# Assignment4task1.py
+
+try:
+    with open("sample.txt", "r") as file:
+        print("File content:\n")
+        for line in file:
+            print(line.strip())  # strip() removes leading/trailing whitespace, including newlines
+except FileNotFoundError:
+    print("Error: The file 'sample.txt' does not exist.")
+
+
+
 ## How to Run the Scripts
 1. Clone this repository:
    ```sh
